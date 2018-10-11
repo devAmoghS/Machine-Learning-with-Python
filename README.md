@@ -7,3 +7,4 @@ Small scale machine learning projects to understand the core concepts
 * Implemented Naives Bayes Classifier to filter spam messages on SpamAssasin Public Corpus
 * Churn Prediction Model for banking dataset using Keras and Scikit-Learn
 * Implemented Random Forest from scratch and built a classifier on Sonar dataset from UCI repository
+* Simple Linear Regression in Python on sample dataset
