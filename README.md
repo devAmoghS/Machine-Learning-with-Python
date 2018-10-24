@@ -8,3 +8,4 @@ Small scale machine learning projects to understand the core concepts
 * Churn Prediction Model for banking dataset using Keras and Scikit-Learn
 * Implemented Random Forest from scratch and built a classifier on Sonar dataset from UCI repository
 * Simple Linear Regression in Python on sample dataset
+* Multiple Regression in Python on sample dataset
