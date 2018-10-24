@@ -9,3 +9,4 @@ Small scale machine learning projects to understand the core concepts
 * Implemented Random Forest from scratch and built a classifier on Sonar dataset from UCI repository
 * Simple Linear Regression in Python on sample dataset
 * Multiple Regression in Python on sample dataset
+* PCA and scaling sample stock data in Python [working_with_data]
