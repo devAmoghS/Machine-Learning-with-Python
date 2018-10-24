@@ -11,3 +11,4 @@ Small scale machine learning projects to understand the core concepts
 * Multiple Regression in Python on sample dataset
 * PCA and scaling sample stock data in Python [working_with_data]
 * Decision Trees in Python on sample dataset
+* Logistic Regression in Python on sample dataset
