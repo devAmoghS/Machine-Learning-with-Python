@@ -12,3 +12,4 @@ Small scale machine learning projects to understand the core concepts
 * PCA and scaling sample stock data in Python [working_with_data]
 * Decision Trees in Python on sample dataset
 * Logistic Regression in Python on sample dataset
+* Built a neural network in Python to defeat a captcha system
