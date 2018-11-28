@@ -14,3 +14,4 @@ Small scale machine learning projects to understand the core concepts
 * Logistic Regression in Python on sample dataset
 * Built a neural network in Python to defeat a captcha system
 * Helper methods include commom operations used in Statistics, Probability, Linear Algebra and Data Analysis
+* K-means clustering with example data; clustering colors with k-means; Bottom-up Hierarchical Clustering
