@@ -21,3 +21,12 @@
 * Sentence generation using n-grams
 * Sentence generation using **Grammars and Automata Theory; Gibbs Sampling** 
 * Topic Modelling using Latent Dirichlet Analysis (LDA)
+
+## How good is the code ?
+* It is well tested
+* It passes style checks (PEP8 compliant)
+* It can compile in its current state (and there are relatively no issues)
+
+## How much support is available?
+* FAQs (coming soon)
+* Documentation (coming soon)
