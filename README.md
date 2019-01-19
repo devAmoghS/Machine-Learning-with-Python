@@ -1,4 +1,6 @@
 # Machine-Learning-with-Python
+![alt text](https://media.istockphoto.com/vectors/machine-learning-3-step-infographic-artificial-intelligence-machine-vector-id962219860?k=6&m=962219860&s=612x612&w=0&h=yricYyUqZbILMHp3IvtenS3xbRDhu1w1u5kk2az5tbo=)
+
 Small scale machine learning projects to understand the core concepts
 * Topic Modelling using Latent Dirichlet Allocation with newsgroups20 dataset, implemented with Python and Scikit-Learn
 * Implemented a simple neural network built with Keras on MNIST dataset
