@@ -1,4 +1,4 @@
-# machine-learning-with-python
+# Machine-Learning-with-Python
 Small scale machine learning projects to understand the core concepts
 * Topic Modelling using Latent Dirichlet Allocation with newsgroups20 dataset, implemented with Python and Scikit-Learn
 * Implemented a simple neural network built with Keras on MNIST dataset
