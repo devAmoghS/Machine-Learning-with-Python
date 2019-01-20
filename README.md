@@ -22,6 +22,30 @@
 * Sentence generation using **Grammars and Automata Theory; Gibbs Sampling** 
 * Topic Modelling using Latent Dirichlet Analysis (LDA)
 
+## Installation notes
+MLwP is built using Python 3.5.  The easiest way to set up a compatible
+environment is to use [Conda](https://conda.io/).  This will set up a virtual
+environment with the exact version of Python used for development along with all the
+dependencies needed to run MLwP.
+
+1.  [Download and install Conda](https://conda.io/docs/download.html).
+2.  Create a Conda environment with Python 3.
+
+    ```
+    conda create -n *your env name* python=3.5
+    ```
+
+3.  Now activate the Conda environment.
+
+    ```
+    source activate *your env name*
+    ```
+
+4.  Install the required dependencies.
+
+    ```
+    ./scripts/install_requirements.sh
+
 ## How good is the code ?
 * It is well tested
 * It passes style checks (PEP8 compliant)
