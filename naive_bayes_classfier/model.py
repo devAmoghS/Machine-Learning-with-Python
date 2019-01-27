@@ -2,7 +2,7 @@ import glob
 import re
 from collections import Counter
 import random
-from naive_bayes_classifier.naivebayesclassifier import NaiveBayesClassifier
+from naive_bayes_classfier.naivebayesclassifier import NaiveBayesClassifier
 
 
 def split_data(data, prob):

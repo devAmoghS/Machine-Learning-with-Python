@@ -1,7 +1,6 @@
-from collections import Counter
+import random
+
 from helpers.linear_algebra import distance, vector_subtract, scalar_multiply
-from functools import reduce
-import math, random
 
 
 def sum_of_squares(v):
@@ -14,7 +13,6 @@ def difference_quotient(f, x, h):
 
 
 def plot_estimated_derivative():
-
     def square(x):
         return x * x
 
@@ -26,14 +24,13 @@ def plot_estimated_derivative():
 
     # plot to show they're basically the same
     import matplotlib.pyplot as plt
-    x = range(-10,10)
-    plt.plot(x, map(derivative, x), 'rx')           # red  x
+    x = range(-10, 10)
+    plt.plot(x, map(derivative, x), 'rx')  # red  x
     plt.plot(x, map(derivative_estimate, x), 'b+')  # blue +
-    plt.show()                                      # purple *, hopefully
+    plt.show()  # purple *, hopefully
 
 
 def partial_difference_quotient(f, v, i, h):
-
     # add h to just the i-th element of v
     w = [v_j + (h if j == i else 0)
          for j, v_j in enumerate(v)]
@@ -58,11 +55,13 @@ def sum_of_squares_gradient(v):
 
 def safe(f):
     """define a new function that wraps f and return it"""
+
     def safe_f(*args, **kwargs):
         try:
             return f(*args, **kwargs)
         except:
-            return float('inf')         # this means "infinity" in Python
+            return float('inf')  # this means "infinity" in Python
+
     return safe_f
 
 
@@ -77,9 +76,9 @@ def minimize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
 
     step_sizes = [100, 10, 1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
 
-    theta = theta_0                           # set theta to initial value
-    target_fn = safe(target_fn)               # safe version of target_fn
-    value = target_fn(theta)                  # value we're minimizing
+    theta = theta_0  # set theta to initial value
+    target_fn = safe(target_fn)  # safe version of target_fn
+    value = target_fn(theta)  # value we're minimizing
 
     while True:
         gradient = gradient_fn(theta)
@@ -113,6 +112,7 @@ def maximize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
                           theta_0,
                           tolerance)
 
+
 #
 # minimize / maximize stochastic
 #
@@ -121,22 +121,21 @@ def maximize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
 def in_random_order(data):
     """generator that returns the elements of data in random order"""
     indexes = [i for i, _ in enumerate(data)]  # create a list of indexes
-    random.shuffle(indexes)                    # shuffle them
-    for i in indexes:                          # return the data in that order
+    random.shuffle(indexes)  # shuffle them
+    for i in indexes:  # return the data in that order
         yield data[i]
 
 
 def minimize_stochastic(target_fn, gradient_fn, x, y, theta_0, alpha_0=0.01):
-
     data = list(zip(x, y))
-    theta = theta_0                             # initial guess
-    alpha = alpha_0                             # initial step size
-    min_theta, min_value = None, float("inf")   # the minimum so far
+    theta = theta_0  # initial guess
+    alpha = alpha_0  # initial step size
+    min_theta, min_value = None, float("inf")  # the minimum so far
     iterations_with_no_improvement = 0
 
     # if we ever go 100 iterations with no improvement, stop
     while iterations_with_no_improvement < 100:
-        value = sum( target_fn(x_i, y_i, theta) for x_i, y_i in data )
+        value = sum(target_fn(x_i, y_i, theta) for x_i, y_i in data)
 
         if value < min_value:
             # if we've found a new minimum, remember it
@@ -167,17 +166,17 @@ if __name__ == "__main__":
 
     print("using the gradient")
 
-    v = [random.randint(-10,10) for i in range(3)]
+    v = [random.randint(-10, 10) for i in range(3)]
 
     tolerance = 0.0000001
 
     while True:
         # print v, sum_of_squares(v)
-        gradient = sum_of_squares_gradient(v)   # compute the gradient at v
-        next_v = step(v, gradient, -0.01)       # take a negative gradient step
-        if distance(next_v, v) < tolerance:     # stop if we're converging
+        gradient = sum_of_squares_gradient(v)  # compute the gradient at v
+        next_v = step(v, gradient, -0.01)  # take a negative gradient step
+        if distance(next_v, v) < tolerance:  # stop if we're converging
             break
-        v = next_v                              # continue if we're not
+        v = next_v  # continue if we're not
 
     print("minimum v", v)
     print("minimum value", sum_of_squares(v))

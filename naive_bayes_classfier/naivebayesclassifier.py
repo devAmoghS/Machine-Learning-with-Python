@@ -1,4 +1,4 @@
-from naive_bayes_classifier.utils import count_words, word_probabilities, spam_probability
+from naive_bayes_classfier.utils import count_words, word_probabilities, spam_probability
 
 
 class NaiveBayesClassifier:

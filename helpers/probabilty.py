@@ -13,7 +13,7 @@ def uniform_pdf(x):
 
 
 def uniform_cdf(x):
-    "returns the probability that a uniform random variable is less than x"
+    """returns the probability that a uniform random variable is less than x"""
     if x < 0:
         return 0  # uniform random is never less than 0
     elif x < 1:
@@ -22,7 +22,7 @@ def uniform_cdf(x):
         return 1  # uniform random is always less than 1
 
 
-def normal_pdf(x, mu=0, sigma=1):
+def normal_pdf(x, mu=0, sigma=1.0):
     sqrt_two_pi = math.sqrt(2 * math.pi)
     return math.exp(-(x - mu) ** 2 / 2 / sigma ** 2) / (sqrt_two_pi * sigma)
 
@@ -37,7 +37,7 @@ def plot_normal_pdfs(plt):
     plt.show()
 
 
-def normal_cdf(x, mu=0, sigma=1):
+def normal_cdf(x, mu=0, sigma=1.0):
     return (1 + math.erf((x - mu) / math.sqrt(2) / sigma)) / 2
 
 
@@ -60,6 +60,7 @@ def inverse_normal_cdf(p, mu=0, sigma=1, tolerance=0.00001):
 
     low_z, low_p = -10.0, 0  # normal_cdf(-10) is (very close to) 0
     hi_z, hi_p = 10.0, 1  # normal_cdf(10)  is (very close to) 1
+    mid_z = None
     while hi_z - low_z > tolerance:
         mid_z = (low_z + hi_z) / 2  # consider the midpoint
         mid_p = normal_cdf(mid_z)  # and the cdf's value there
