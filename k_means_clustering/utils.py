@@ -112,7 +112,7 @@ def get_merge_order(cluster):
 
 def bottom_up_cluster(inputs, distance_agg=min):
     # start with every input leaf cluster
-    clusters = [(input) for input in inputs]
+    clusters = [input for input in inputs]
 
     # as long as we have more than one cluster left...
     while len(clusters) > 1:

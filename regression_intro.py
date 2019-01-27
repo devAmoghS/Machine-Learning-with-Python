@@ -1,10 +1,11 @@
-import pandas as pd
-import quandl, math, datetime
-import numpy as np
-from sklearn import preprocessing, model_selection, svm
-from sklearn.linear_model import LinearRegression
+import datetime
+import math
 import matplotlib.pyplot as plt
+import numpy as np
+import quandl
 from matplotlib import style
+from sklearn import preprocessing, model_selection
+from sklearn.linear_model import LinearRegression
 
 # Style file for plotting graph
 style.use('ggplot')
@@ -12,9 +13,9 @@ style.use('ggplot')
 # Retrieve dataframe from Quandl
 df = quandl.get('WIKI/GOOGL')
 
-df = df[['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume',]]
+df = df[['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume', ]]
 # High Low Change => Volatility of the stock
-df['HL_PCT'] =  (df['Adj. High'] - df['Adj. Low']) / df['Adj. Low'] * 100.0
+df['HL_PCT'] = (df['Adj. High'] - df['Adj. Low']) / df['Adj. Low'] * 100.0
 # Percentage Change => Volatility change
 df['PCT_change'] = (df['Adj. Close'] - df['Adj. Open']) / df['Adj. Open'] * 100.0
 
@@ -69,10 +70,10 @@ one_day_in_secs = 86400
 next_unix = last_unix + one_day_in_secs
 
 for i in forecast_set:
-  next_date = datetime.datetime.fromtimestamp(next_unix)
-  next_unix += one_day_in_secs
-  # loc is used for indexing
-  df.loc[next_date] = [np.nan for _ in range(len(df.columns)-1)] + [i]
+    next_date = datetime.datetime.fromtimestamp(next_unix)
+    next_unix += one_day_in_secs
+    # loc is used for indexing
+    df.loc[next_date] = [np.nan for _ in range(len(df.columns) - 1)] + [i]
 
 print(df.tail())
 

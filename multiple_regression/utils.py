@@ -3,7 +3,7 @@ from functools import partial
 
 from helpers.gradient_descent import minimize_stochastic
 from helpers.linear_algebra import dot, vector_add
-from helpers.probability import normal_cdf
+from helpers.probabilty import normal_cdf
 from helpers.stats import de_mean
 
 

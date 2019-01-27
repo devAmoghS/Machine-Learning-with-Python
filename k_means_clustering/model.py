@@ -1,7 +1,7 @@
 import random
 
 from k_means_clustering.data import inputs
-from k_means_clustering.utils import KMeans, squared_clustering_errors, recolor_image, bottom_up_cluster, \
+from k_means_clustering.utils import KMeans, bottom_up_cluster, \
     generate_clusters, get_values
 
 if __name__ == '__main__':
