@@ -29,10 +29,12 @@ environment with the exact version of Python used for development along with all
 dependencies needed to run MLwP.
 
 1.  [Download and install Conda](https://conda.io/docs/download.html).
-2.  Create a Conda environment with Python 3.
+2.  Create a Conda environment with Python 3. 
+
+(**Note**: enter ```cd ~``` to go on **$HOME** , then perform these commands)
 
     ```
-    conda create -n *your env name* python=3.5
+    conda create --name *your env name* python=3.5
     ```
 
 3.  Now activate the Conda environment.
@@ -44,7 +46,7 @@ dependencies needed to run MLwP.
 4.  Install the required dependencies.
 
     ```
-    ./scripts/install_requirements.sh
+    conda install --yes --file *path to requirements.txt*
 
 ## How good is the code ?
 * It is well tested
