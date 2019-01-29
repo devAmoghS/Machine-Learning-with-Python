@@ -125,7 +125,8 @@ Executing transaction: done
 4.  Install the required dependencies.
 
     ```
-    (mlwp-test) amogh@hp15X34:~$ conda install --yes --file /home/amogh/Work/ML_Projects/Machine-Learning-with-            Python/requirements.txt
+    (mlwp-test) amogh@hp15X34:~$ conda install --yes --file *path to requirements.txt*
+    ```
 
 ## How good is the code ?
 * It is well tested
