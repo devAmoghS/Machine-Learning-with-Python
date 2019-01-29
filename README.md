@@ -36,17 +36,96 @@ dependencies needed to run MLwP.
     ```
     conda create --name *your env name* python=3.5
     ```
+   
+   You will get the following, mlwp-test is the env name used in this example
+   
+   ```
+   Solving environment: done
+   
+## Package Plan ##
+
+  environment location: /home/user/anaconda3/envs/mlwp-test
+
+  added / updated specs: 
+    - python=3.5
+
+
+The following NEW packages will be INSTALLED:
+
+    ca-certificates: 2018.12.5-0            
+    certifi:         2018.8.24-py35_1       
+    libedit:         3.1.20181209-hc058e9b_0
+    libffi:          3.2.1-hd88cf55_4       
+    libgcc-ng:       8.2.0-hdf63c60_1       
+    libstdcxx-ng:    8.2.0-hdf63c60_1       
+    ncurses:         6.1-he6710b0_1         
+    openssl:         1.0.2p-h14c3975_0      
+    pip:             10.0.1-py35_0          
+    python:          3.5.6-hc3d631a_0       
+    readline:        7.0-h7b6447c_5         
+    setuptools:      40.2.0-py35_0          
+    sqlite:          3.26.0-h7b6447c_0      
+    tk:              8.6.8-hbc83047_0       
+    wheel:           0.31.1-py35_0          
+    xz:              5.2.4-h14c3975_4       
+    zlib:            1.2.11-h7b6447c_3      
+
+Proceed ([y]/n)?  *Press y*
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use:
+# > source activate mlwp-test
+#
+# To deactivate an active environment, use:
+# > source deactivate
+#
+
+   ```
+   The environment is successfully created.
 
 3.  Now activate the Conda environment.
 
     ```
     source activate *your env name*
     ```
+    You will get the following
+    
+    ```
+    (mlwp-test) amogh@hp15X34:~$ 
+    ```
+    Enter `conda list` to get the list of available packages
+    
+    ```
+        (mlwp-test) amogh@hp15X34:~$ conda list
+    # packages in environment at /home/amogh/anaconda3/envs/mlwp-test:
+    #
+    # Name                    Version                   Build  Channel
+    ca-certificates           2018.12.5                     0  
+    certifi                   2018.8.24                py35_1  
+    libedit                   3.1.20181209         hc058e9b_0  
+    libffi                    3.2.1                hd88cf55_4  
+    libgcc-ng                 8.2.0                hdf63c60_1  
+    libstdcxx-ng              8.2.0                hdf63c60_1  
+    ncurses                   6.1                  he6710b0_1  
+    openssl                   1.0.2p               h14c3975_0  
+    pip                       10.0.1                   py35_0  
+    python                    3.5.6                hc3d631a_0  
+    readline                  7.0                  h7b6447c_5  
+    setuptools                40.2.0                   py35_0  
+    sqlite                    3.26.0               h7b6447c_0  
+    tk                        8.6.8                hbc83047_0  
+    wheel                     0.31.1                   py35_0  
+    xz                        5.2.4                h14c3975_4  
+    zlib                      1.2.11               h7b6447c_3 
+    ```
 
 4.  Install the required dependencies.
 
     ```
-    conda install --yes --file *path to requirements.txt*
+    (mlwp-test) amogh@hp15X34:~$ conda install --yes --file /home/amogh/Work/ML_Projects/Machine-Learning-with-            Python/requirements.txt
 
 ## How good is the code ?
 * It is well tested
