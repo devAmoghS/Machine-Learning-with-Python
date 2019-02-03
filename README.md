@@ -129,7 +129,7 @@ Executing transaction: done
     ```
     
 5. In case you are not able to install the packages or getting `PackagesNotFoundError`
-Use the following command ` conda install -c conda-forge *list of packages separated by space*`. For more info, refer issue #3 **Unable to install requirements**
+Use the following command ` conda install -c conda-forge *list of packages separated by space*`. For more info, refer issue [#3](https://github.com/devAmoghS/Machine-Learning-with-Python/issues/3) **Unable to install requirements**
 
 
 ## How good is the code ?
