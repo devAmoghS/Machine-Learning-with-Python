@@ -127,6 +127,10 @@ Executing transaction: done
     ```
     (mlwp-test) amogh@hp15X34:~$ conda install --yes --file *path to requirements.txt*
     ```
+    
+5. In case you are not able to install the packages or getting `PackagesNotFoundError`
+Use the following command ` conda install -c conda-forge *list of packages separated by space*`. For more info, refer issue #3 **Unable to install requirements**
+
 
 ## How good is the code ?
 * It is well tested
