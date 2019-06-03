@@ -23,6 +23,7 @@
 * Topic Modelling using Latent Dirichlet Analysis (LDA)
 * Wrapper for using Scikit-Learn's **GridSearchCV** for a **Keras Neural Network**
 * **Recommender system** using **cosine similarity**, recommending new interests to users as well as matching users as per common interests
+* Implementing different methods for **network analysis** such as **PageRank, Betweeness Centrality, Closeness Centrality, EigenVector Centrality**
 
 ## Installation notes
 MLwP is built using Python 3.5.  The easiest way to set up a compatible
