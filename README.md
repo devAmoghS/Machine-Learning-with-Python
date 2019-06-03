@@ -25,6 +25,7 @@
 * **Recommender system** using **cosine similarity**, recommending new interests to users as well as matching users as per common interests
 * Implementing different methods for **network analysis** such as **PageRank, Betweeness Centrality, Closeness Centrality, EigenVector Centrality**
 * Implementing methods used for **Hypothesis Inference** such as **P-hacking, A/B Testing, Bayesian Inference**
+* Implemented **K-nearest neigbors** for next presedential election and prediciting voting behavior based on nearest neigbors.
 
 ## Installation notes
 MLwP is built using Python 3.5.  The easiest way to set up a compatible
