@@ -1,4 +1,4 @@
-# Machine-Learning-with-Python [![star this repo](http://githubbadges.com/star.svg?user=devAmoghS&repo=Machine-Learning-with-Python)](http://github.com/ddavison/github-badges) [![fork this repo](http://githubbadges.com/fork.svg?user=devAmoghS&repo=Machine-Learning-with-Python)](http://github.com/ddavison/github-badges/fork)
+# Machine-Learning-with-Python ![GitHub stars](https://img.shields.io/github/stars/devAmoghS/Machine-Learning-with-Python?style=for-the-badge)  ![GitHub forks](https://img.shields.io/github/forks/devAmoghS/Machine-Learning-with-Python?label=Forks&style=for-the-badge)
 ![alt text](https://media.istockphoto.com/vectors/machine-learning-3-step-infographic-artificial-intelligence-machine-vector-id962219860?k=6&m=962219860&s=612x612&w=0&h=yricYyUqZbILMHp3IvtenS3xbRDhu1w1u5kk2az5tbo=)
 
 ## Small scale machine learning projects to understand the core concepts (order: oldest to newest)
