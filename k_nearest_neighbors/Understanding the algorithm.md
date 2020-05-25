@@ -6,6 +6,10 @@ K-nearest nieghbor is a supervised machine learning algorithm.
 
 Given some labelled data points, we have to classify a new data point according to its nearest neigbors.
 
+**Example used here**
+
+We have the data for large social network company which ran polls for their favroite programming language. The users belong from a group of large cities. Now the VP of Community Engagement want you to `predict the` **favorite programming language** `for the places that were` **not** `part of the survey`
+
 ### Intuition
 
 * In kNN, k is the no. of neigbors you will evaluate to decide which group a new data point will belong to ?
