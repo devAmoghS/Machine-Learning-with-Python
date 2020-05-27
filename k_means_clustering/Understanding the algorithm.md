@@ -18,17 +18,17 @@ We have the data for a large social networking company which is planning to host
 
 ### Intuition
 
-**Initialization**
-* In k-means, k is the no. of subgroups you want the data to be segregated into ?
-* Value of k is decided by elbow method or can be initialised randomly as well
-* Once the value of k is initiliazed, we take the nearest data points from each centroid
+* In K-means, `k` is the `no. of subgroups` you want the data to be segregated into ?
+* Optimal value of `k` can be derived by using `elbow method` (discussed below)
+**Centroid Initialization**
+* We begin by initializing `k` random data points as the centroids (first pass)
 * The measure of distance between the data points and centroids can be calculated using either `Euclidean Distance` or `Manhattan Distance`
 
 **Iteration**
-* We assign a cluster to the data point of the nearest centroid
-* Once all the points are assigned to their nearest centroids, then for each cluster the centroid is calculated again.
+* **Cluster assigment:** We assign a cluster to the data point that is nearest to it.
+* Once all the points are assigned to their nearest centroids, then for each cluster the centroid is calculated again using centroid initialization step.
 * With the new centroids, we repeat the step of cluster assignment.
-* The above three steps are iterated as long as there is no change in cluster assigment of data points.
+* These two steps are iterated as long as `there is no change in cluster assigment of data points` i.e. no data point is moving into a new cluster.
 
 ### Choosing K value - Elbow method
 * Elbow method gives us an idea on what a good k number of clusters.
@@ -40,7 +40,7 @@ Here I am increasing the k value by 1 from `1 to 10` and printing the sum of squ
 
 ### Note
 
-* Kmeans gives more weight to the bigger clusters.
-* Kmeans assumes spherical shapes of clusters (with radius equal to the distance between the centroid and the furthest data point) and doesn’t work well when clusters are in different shapes such as elliptical clusters.
-* If there is overlapping between clusters, kmeans doesn’t have an intrinsic measure for uncertainty for the examples belong to the overlapping region in order to determine for which cluster to assign each data point.
-* Kmeans may still cluster the data even if it can’t be clustered such as data that comes from uniform distributions.
+* K-means gives more weight to the bigger clusters.
+* K-means assumes spherical shapes of clusters (with radius equal to the distance between the centroid and the furthest data point) and doesn’t work well when clusters are in different shapes such as elliptical clusters.
+* If there is overlapping between clusters, K-means doesn’t have an intrinsic measure for uncertainty for the examples belong to the overlapping region in order to determine for which cluster to assign each data point.
+* K-means may still cluster the data even if it can’t be clustered such as data that comes from uniform distributions.
