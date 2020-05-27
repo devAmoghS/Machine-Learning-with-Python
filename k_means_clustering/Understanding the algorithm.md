@@ -17,13 +17,12 @@ Given some **unlabelled** data points, we have to identify subgroups such that
 We have the data for a large social networking company which is planning to host meetups for their users. We have the users' location data. Now the VP of Growth want you to `choose the` **meetup locations** `so it becomes convinient for everyone to attend`
 
 ### Intuition
-
+**Initialization**
 * In k-means, k is the no. of subgroups you want the data to be segregated into ?
 * Value of k is decided by elbow method or can be initialised randomly as well
 * Once the value of k is initiliazed, we take the nearest data points from each centroid
 * The measure of distance between the data points and centroids can be calculated using either `Euclidean Distance` or `Manhattan Distance`
-
-### Iteration
+**Iteration**
 * We assign a cluster to the data point of the nearest centroid
 * Once all the points are assigned to their nearest centroids, then for each cluster the centroid is calculated again.
 * With the new centroids, we repeat the step of cluster assignment.
