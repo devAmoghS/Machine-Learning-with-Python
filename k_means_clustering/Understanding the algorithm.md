@@ -28,7 +28,6 @@ We have the data for a large social networking company which is planning to host
 * We assign a cluster to the data point of the nearest centroid
 * Once all the points are assigned to their nearest centroids, then for each cluster the centroid is calculated again.
 * With the new centroids, we repeat the step of cluster assignment.
-
 * The above three steps are iterated as long as there is no change in cluster assigment of data points.
 
 ### Choosing K value - Elbow method
