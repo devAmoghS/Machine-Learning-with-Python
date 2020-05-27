@@ -8,7 +8,7 @@ Given some labelled data points, we have to classify a new data point according 
 
 **Example used here**
 
-We have the data for large social network company which ran polls for their favroite programming language. The users belong from a group of large cities. Now the VP of Community Engagement want you to `predict the` **favorite programming language** `for the places that were` **not** `part of the survey`
+We have the data for a large social networking company which ran polls for their favroite programming language. The users belong from a group of large cities. Now the VP of Community Engagement want you to `predict the` **favorite programming language** `for the places that were` **not** `part of the survey`
 
 ### Intuition
 
