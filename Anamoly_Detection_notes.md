@@ -43,6 +43,6 @@ c. One more caveat is that of precision and recall scores for such classifiers ?
 ### Types of Anomalies
 a. **Point Anomalies**: Individual instance of data is considered as anomalous with respect to rest of data (e.g. purchase with a large transaction value) <br>
 b. **Contexual Anomalies**: The instance of data is considered as anomalous with respect to the context, but not otherwise (e.g. large spike in a trend at middle of night) <br>
-c. **Collective Anomalies**: Unlike the previous two, here we consider a collection of data instances making up for an anomaly with respect to the rest of data
-  i. Events that are actually ordered but showing a degree of disorder (e.g. rhythm in ECG)
-  ii. Unexpected value comnbinations (e.g. buying a large number of expensive items)
+c. **Collective Anomalies**: Unlike the previous two, here we consider a collection of data instances making up for an anomaly with respect to the rest of data <br>
+  i. Events that are actually ordered but showing a degree of disorder (e.g. rhythm in ECG) <br>
+  ii. Unexpected value comnbinations (e.g. buying a large number of expensive items) <br>
