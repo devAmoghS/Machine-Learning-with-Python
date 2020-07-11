@@ -4,6 +4,12 @@
 
 ![Vanishing Gradient](https://i.stack.imgur.com/YUlyb.jpg)
 
+### TL;DR
+The gradient used in backprop is calculated using the derivative chain rule, meaning it is a product of about as many factors as there are layers (in a vanilla feedforward net). <br> 
+If all those factors are e.g. between 0 and 1 (e.g. due to the choice of 'squishing' activation functions), and some are very small (typical in the earlier layers and when activations are saturated), then the overall product (gradient) will get very small, near zero.<br> 
+The risk of this happening grows with the number of factors (the number of layers). <br>
+The problem is that this may happen for a weight configuration that is nowhere near optimal, yet training will slow down or stop
+
 ### Introduction
 
 We all know that neural networks perform learning through the process of forward pass and backward pass.<br> 
