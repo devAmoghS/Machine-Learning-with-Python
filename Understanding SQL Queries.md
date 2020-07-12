@@ -158,3 +158,20 @@ FROM
  transactions
 GROUP BY 1,2
 ```
+### Bonus Questions
+
+#### 4.Write an SQL query that makes recommendations using the pages that your friends liked. Assume you have two tables: 
+
+`usersAndFriends`
+| column_name       | data_type     |
+--- | --- | 
+| user_id       | int     |     
+| friend    | int| 
+
+`usersLikedPages`
+| column_name       | data_type     |
+--- | --- | 
+| user_id       | int     |     
+| page    | varchar| 
+
+#### It should not recommend pages you already like.
