@@ -172,6 +172,6 @@ GROUP BY 1,2
 | column_name       | data_type     |
 --- | --- | 
 | user_id       | int     |     
-| page    | varchar| 
+| liked_page    | varchar| 
 
 #### It should not recommend pages you already like.
