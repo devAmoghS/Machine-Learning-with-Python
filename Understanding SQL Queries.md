@@ -118,3 +118,43 @@ FROM
 WHERE 
   users.id IS NULL
 ```
+
+#### 3. Aggregations with a conditional statement
+
+`transactions`
+| column_name       | data_type     |
+--- | --- | 
+| user_id       | int     |     
+| created_at    | datetime|     
+| product       | varchar |     
+
+##### Question: Given the same user transactions table as before,write a query to get the total purchases made in the morning versus afternoon/evening (AM vs PM) by day.
+
+We are comparing two groups. Every time we have to compare two groups we must use a GROUP BY
+
+In this case, we need to create a separate column to actually run our GROUP BY on, which in this case, is the difference between AM or PM in the `created_at` field.
+
+```
+CASE 
+ WHEN HOUR(created_at) > 11 THEN 'PM' 
+ ELSE 'AM' 
+END AS time_of_day 
+```
+
+We can cast the created_at column to the hour and set the new column value time_of_day as AM or PM based on this condition. 
+
+Now we just have to run a GROUP BY on the original `created_at` field truncated to the day AND the new column we created that differentiates each row value. <br> 
+The last aggregation will then be the output variable we want which is total purchases by running the COUNT function.
+
+```
+SELECT
+ DATE_TRUNC('day', created_at) AS date
+ ,CASE 
+   WHEN HOUR(created_at) > 11 THEN 'PM' 
+   ELSE 'AM' 
+  END AS time_of_day
+ ,COUNT(*)
+FROM 
+ transactions
+GROUP BY 1,2
+```
