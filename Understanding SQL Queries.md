@@ -178,7 +178,7 @@ GROUP BY 1,2
 
 #### 5.Write an SQL query that shows percentage change month over month in daily active users. Assume you have a table: 
 
-`usersAndFriends`
+`logins`
 | column_name       | data_type     |
 --- | --- | 
 | user_id       | int     |     
