@@ -175,3 +175,11 @@ GROUP BY 1,2
 | page_id    | int| 
 
 #### It should not recommend pages you already like.
+
+#### 5.Write an SQL query that shows percentage change month over month in daily active users. Assume you have a table: 
+
+`usersAndFriends`
+| column_name       | data_type     |
+--- | --- | 
+| user_id       | int     |     
+| date    | date| 
