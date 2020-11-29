@@ -9,7 +9,7 @@ beautifulsoup4==4.6.3
 certifi==2018.8.24
 cffi==1.11.5
 chardet==3.0.4
-cryptography==2.3.1
+cryptography==3.2
 cycler==0.10.0
 h5py==2.9.0
 idna==2.7
