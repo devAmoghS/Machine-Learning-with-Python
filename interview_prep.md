@@ -50,6 +50,18 @@ Some of its applications include determining the spread of data. It is used in t
 The IQR is also used to determine outliers to the data set. This is in conjuction with the box plot (or the box-and-whisker plot). Outliers are defined as values that are below Q1-1.5*IQR or above Q3+1.5*IQR. There are other methods that could be used to determine whether outliers can be eliminated from the data set.
 
 ### 5. What is the difference between t-test and z-test ? Why is it useful ?
+
+![](https://www.wallstreetmojo.com/wp-content/uploads/2019/01/Z-Test-vs-T-Test.png)
+
+
+| Basis                               |                                                                               Z Test                                                                               |                                                                                                   T-Test                                                                                                   |
+|-------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Basic Definition                    | Z-test is a kind of hypothesis test which ascertains if the averages of the 2 datasets are different from each other when standard deviation or variance is given. | The t-test can be referred to as a kind of parametric test that is applied to an identity, how the averages of 2 sets of data differ from each other when the standard deviation or variance is not given. |
+| Population Variance                 | The Population variance or standard deviation is known here.                                                                                                       | The Population variance or standard deviation is unknown here.                                                                                                                                             |
+| Sample Size                         | The Sample size is large.                                                                                                                                          | Here the Sample Size is small.                                                                                                                                                                             |
+| Key Assumptions                     | All data points are independent. Normal Distribution for Z, with an average zero and variance = 1.                                                                 | All data points are not dependent. Sample values are to be recorded and taken accurately.                                                                                                                  |
+| Based upon (a type of distribution) | Based on Normal distribution.                                                                                                                                      | Based on Student-t distribution.                                                                                                                                                                           |
+
 ### 6. Why do we take n-1 when calculating sample variance? Why is it useful ?
 Read about Besel correction
 ### 7. What are the assumptions of the normal distribution ? Why is it useful ?
