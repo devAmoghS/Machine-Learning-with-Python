@@ -27,6 +27,28 @@ If you further increase the number of dice you roll, the edge cases become less 
 ![](https://prwatech.in/blog/wp-content/uploads/2019/06/CetralLimitThm-1024x512.png)
 
 ### 4. What is the inter quartile range ? Why is it useful ?
+
+The interquartile range is a measure of where the “middle fifty” is in a data set. Where a range is a measure of where the beginning and end are in a set, an interquartile range is a measure of where the bulk of the values lie. That’s why it’s preferred over many other measures of spread when reporting things like school performance or SAT scores.
+
+The interquartile range formula is the first quartile subtracted from the third quartile:
+IQR = Q3 – Q1.
+
+![](https://naysan.ca/wp-content/uploads/2020/06/box_plot_ref_needed.png)
+
+#### IQR as a test of normality in a distribution
+
+Use the interquartile range formula with the mean and standard deviation to test whether or not a population has a normal distribution. The formula to determine whether or not a population is normally distributed are:
+Q1 – (σ z1) + X
+Q3 – (σ z3) + X
+Where Q1 is the first quartile, Q3 is the third quartile, σ is the standard deviation, z is the standard score (“z-score“) and X is the mean. In order to tell whether a population is normally distributed, solve both equations and then compare the results. If there is a significant difference between the results and the first or third quartiles, then the population is not normally distributed.
+
+#### IQR as an instrument to detect outliers and to determine the spread of data
+The interquartile range and the quartile deviation refer to the same thing. They both mean the difference between the third quartile (Q3) and the first quartile (Q1). Both are also called midspread or middle fifty.
+
+Some of its applications include determining the spread of data. It is used in the construction of a box plot. It is a good indicator of spread because it is robust with breakpoint of 25%. A breakpoint percentage indicates the number of incorrect observations, before a parameter starts giving a wrong description of the data set. A 25% breakpoint is robust, as it needs a quarter of the data to be incorrect, before it reflects an incorrect spread.
+
+The IQR is also used to determine outliers to the data set. This is in conjuction with the box plot (or the box-and-whisker plot). Outliers are defined as values that are below Q1-1.5*IQR or above Q3+1.5*IQR. There are other methods that could be used to determine whether outliers can be eliminated from the data set.
+
 ### 5. What is the difference between t-test and z-test ? Why is it useful ?
 ### 6. Why do we take n-1 when calculating sample variance? Why is it useful ?
 Read about Besel correction
