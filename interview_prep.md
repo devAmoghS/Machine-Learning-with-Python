@@ -16,6 +16,16 @@ Normalization is a scaling technique in which values are shifted and rescaled so
 ![](https://i.pinimg.com/originals/1c/16/04/1c160466f8bfd26ca66a44f79514fb5d.jpg)
 
 ### 3. What is the central limit theorem ? Why is it useful ?
+The Central Limit Theorem is about how the sum of many different independent random variables tends towards a normal distribution (bell curve).
+
+For example: suppose you're rolling 2 6-sided dice. The rolls are all independent because one of the rolls doesn't affect any of the other rolls. For a single die, the distribution is the same chance for 1 2 3 4 5 and 6.
+
+But of you add the sum of 2 dice, you will notice that you have a 1/36 chance to get a 2, 2/36 chance to get a 3, 3/36 chance to get a 4, ..., up until 6/36 chance of getting a 7, then the chance decreases again until you're back at 1/36 chance of getting a 12. This is because the values in the middle, like 7, can be reached by getting 1+6, 6+1, 2+5, 5+2, 3+4 and 4+3, whereas the edges like 2 require a single very specific result (1+1) where every single die needs to land on 1.
+
+If you further increase the number of dice you roll, the edge cases become less and less likely, because they keep requiring very specific results, whereas the results in the middle become more likely. The more dice you add, the more it will eventually look like a bell curve.
+
+![](https://prwatech.in/blog/wp-content/uploads/2019/06/CetralLimitThm-1024x512.png)
+
 ### 4. What is the inter quartile range ? Why is it useful ?
 ### 5. What is the difference between t-test and z-test ? Why is it useful ?
 ### 6. Why do we take n-1 when calculating sample variance? Why is it useful ?
