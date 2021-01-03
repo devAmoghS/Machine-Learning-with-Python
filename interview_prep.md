@@ -4,6 +4,17 @@ When two or more predictors are highly correlated to each other such that one pr
 can be derived using the linear combinations of other predictors, then the predictors are said to be collinear
 
 ### 2. What is the difference between standardisation and normalization ? Why is it useful?
+Standardisation is a scclaing technique in which values are shifted and rescaled so that the mean is 0 and the variance is 1
+
+Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling
+
+* Algorithms which use gradient descent based optimisation (linear regression, logistic regression, neural networks) will require features to be scaled so that optimization will be faster and the convergence will be more accurate.
+* **Having features on a similar scale can help the gradient descent converge more quickly towards the minima.**
+* Distance algorithms like KNN, K-means, and SVM are most affected by the range of features. This is because behind the scenes they are using distances between data points to determine their similarity.
+* **Therefore, we scale our data before employing a distance based algorithm so that all the features contribute equally to the result.**
+
+![](https://i.pinimg.com/originals/1c/16/04/1c160466f8bfd26ca66a44f79514fb5d.jpg)
+
 ### 3. What is the central limit theorem ? Why is it useful ?
 ### 4. What is the inter quartile range ? Why is it useful ?
 ### 5. What is the difference between t-test and z-test ? Why is it useful ?
