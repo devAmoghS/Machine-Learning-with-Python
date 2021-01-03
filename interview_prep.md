@@ -56,4 +56,5 @@ Target mean encoding
 * R-squared does not measure predictive error.
 * R-squared does not allow you to compare models using transformed responses.
 * R-squared does not measure how one variable explains another.
+
 Ref:- https://data.library.virginia.edu/is-r-squared-useless/#:~:text=Let's%20recap%3A-,R%2Dsquared%20does%20not%20measure%20goodness%20of%20fit.,how%20one%20variable%20explains%20another.
