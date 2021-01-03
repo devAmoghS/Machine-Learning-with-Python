@@ -35,3 +35,24 @@ c. Shortlist top K resumes
 ### 20. How will you encode a feature like PinCode which has very high number of discrete values?
 Target mean encoding
 ### 21. How do you design the architecture of a neural network?
+
+## Section II
+
+| Algorithm               | Problem Identification | Evaluation Metric                                                                               | Bias Variance | Impact of outliers | Impact of imbalanced data |   |
+|-------------------------|------------------------|-------------------------------------------------------------------------------------------------|---------------|--------------------|---------------------------|---|
+| Linear Regression       | Regression             | - Coefficient of determination (R2) - Adjusted R2 - Root Mean Square Error (RMSE) - Mean Absolute Error (MAE) - Root Mean Squared Logarithmic Error (RMSLE)| - High Bias Low Variance               | -Impacted by outliers                   |                           |   |
+| Logistic Regression     | Classification         | - Accuracy - Precision - Recall - F-beta score - Area under ROC curve                           | - High Bias Low Variance               | -Impacted by outliers                    |                           |   |
+| Support Vector Machines | Classification         | - Accuracy - Precision - Recall - F-beta score - Area under ROC curve                                                                                                | - Low Bias High Variance               | Sensitive to outliers                    | Sensitive to imbalanced data                          |   |
+| K-nearest neighbors     | Classification         | - Accuracy - Precision - Recall - F-beta score - Area under ROC curve                                                                                                | - Low Bias High Variance                | Sensitive to outliers                   | Sensitive to imbalanced data                           |   |
+| Decision Tree           | Both                   | Both                                                                                                | - Low Bias High Variance                 | - Not impacted by outliers                   | - Not impacted by imbalanced data                           |   |
+| Random Forest           | Both                   | Both                                                                                                | - Low Bias High Variance                 | - Not impacted by outliers                   | - Not impacted by imbalanced data                          |   |
+| K-means clustering      | Clustering             | - Elbow method - Silhoutte Analysis                                                                                                 |               |                    |                           |   |
+|                         |                        |                                                                                                 |               |                    |                           |   |
+
+### 22. Why do CNNs perfom better with images ? (What is it that CNN achieve better than ANN when delaing with image data)
+### 23. Explain K-means clustering in laymen terms ?
+### 24. What is the evaluation metric for K-means clustering ?
+### 25. What is the impact of outliers on K-means clustering ?
+### 26. What is the impact of outliers on K-nearest neigbors ?
+### 25. What is the impact of imbalanced data on K-means clustering ?
+### 26. What is the impact of imbalanced data on K-nearest neigbors ?
