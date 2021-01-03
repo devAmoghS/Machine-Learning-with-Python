@@ -58,3 +58,22 @@ Target mean encoding
 * R-squared does not measure how one variable explains another.
 
 Ref:- https://data.library.virginia.edu/is-r-squared-useless/#:~:text=Let's%20recap%3A-,R%2Dsquared%20does%20not%20measure%20goodness%20of%20fit.,how%20one%20variable%20explains%20another.
+
+### 24. What is the difference between probability and likelihood ?
+### 25. What is the difference between generative and discriminative models ?
+### 26. How is a decision tree pruned ?
+### 27. What do you understand by the bias variance tradeoff ? 
+
+![](https://djsaunde.files.wordpress.com/2017/07/bias-variance-tradeoff.png)
+
+Bias ia how well the model fits the data. Variance tells us the magnitude of change in the model based on the change in data
+a. Very simple models have high bias and low variance eg. linear models 
+b. Very complex models have low bias and high variance eg. tree based models. Hence they are more prone to overfitting.
+
+How to deal with them ?
+
+| High Bias                                    | High Variance |   |
+|----------------------------------------------|---------------|---|
+| Try getting additional features              | Try getting more training examples              |   |
+| Try adding polynomial features               | Try smaller set of features              |   |
+| Try to decrease the regularization parameter | Try to increase the regularization parameter              |   |
