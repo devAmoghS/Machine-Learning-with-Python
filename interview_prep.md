@@ -51,8 +51,9 @@ Target mean encoding
 
 ### 22. Why do CNNs perfom better with images ? (What is it that CNN achieve better than ANN when delaing with image data)
 ### 23. Explain K-means clustering in laymen terms ?
-### 24. What is the evaluation metric for K-means clustering ?
-### 25. What is the impact of outliers on K-means clustering ?
-### 26. What is the impact of outliers on K-nearest neigbors ?
-### 25. What is the impact of imbalanced data on K-means clustering ?
-### 26. What is the impact of imbalanced data on K-nearest neigbors ?
+### 24. Does a low coefficient of determination always mean that my model is bad or vice versa ? Explain.
+* R-squared does not measure goodness of fit.
+* R-squared does not measure predictive error.
+* R-squared does not allow you to compare models using transformed responses.
+* R-squared does not measure how one variable explains another.
+Ref:- https://data.library.virginia.edu/is-r-squared-useless/#:~:text=Let's%20recap%3A-,R%2Dsquared%20does%20not%20measure%20goodness%20of%20fit.,how%20one%20variable%20explains%20another.
