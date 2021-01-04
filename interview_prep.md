@@ -132,3 +132,13 @@ How to deal with them ?
 | Try getting additional features              | Try getting more training examples              |   |
 | Try adding polynomial features               | Try smaller set of features              |   |
 | Try to decrease the regularization parameter | Try to increase the regularization parameter              |   |
+
+### 28. What is right or left skewness  ? 
+### 29. What is difference between bootstrapping and k-folds cross validation  ?
+overlapping of sample does not happen for k-folds cross validation
+### 30. Which model is better: n_estimators=10 and n_estimators=30 ?
+### 31. Why do we use activation functions in neural networks ?
+### 32. What is the purpose of the optimizers ?
+### 33. How does the stochastic gradient descent optimizer work  ? 
+
+
