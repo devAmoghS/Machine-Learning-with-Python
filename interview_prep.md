@@ -63,7 +63,29 @@ The IQR is also used to determine outliers to the data set. This is in conjuctio
 | Based upon (a type of distribution) | Based on Normal distribution.                                                                                                                                      | Based on Student-t distribution.                                                                                                                                                                           |
 
 ### 6. Why do we take n-1 when calculating sample variance? Why is it useful ?
-Read about Besel correction
+Read about Besel correction for more technical definition
+
+##### Intuitive explaination
+
+If you are giving the standard deviation of an entire population and not a sample you actually do divide by n. However, the denominator is not referencing the number of observations, it's actually referencing degrees of freedom, which is n-1. For you to understand degrees of freedom I would recommend this example using hats.
+
+Basically you divide by the number of things you need to 'know' before you can fill in the blanks yourself. If you are using an entire population, you need every single example as you can't just fill in the blanks. But if you have a sample, you can know all but the last one before you can fill in the blank.
+
+##### Example
+
+![](https://ae01.alicdn.com/kf/HTB1XFW0JXXXXXcKXFXXq6xXFXXX1/225440714/HTB1XFW0JXXXXXcKXFXXq6xXFXXX1.jpg)
+
+Imagine you have a huge bookshelf. You measure the total thickness of the first 6 books and it turns out to be 158mm. This means that the mean thickness of a book based on first 6 samples is 26.3mm.
+Now you take out and measure the first book's thickness (one degree of freedom) and find that it is 22mm. This means that the remaining 5 books must have a total thickness of 136mm
+Now you measure the second book (second degree of freedom) and find it to be 28mm. So you know that the remaining 4 books should have a total thickness of 108mm .
+.
+.
+In this way, by the time you measure the thickness of the 5th book individually (5th degree of freedom) , you automatically know the thickness of the remaining 1 book.
+
+This means that you automatically know the thickness of 6th book even though you have measured only 5. Extrapolating this concept, In a sample of size n, you know the value of the n'th observation even though you have only taken (n-1) measurements. i.e, the opportunity to vary has been taken away for the n'th observation.
+
+This means that if you have measured (n-1) objects then the nth object has no freedom to vary. Therefore, degree of freedom is only (n-1) and not n.
+
 ### 7. What are the assumptions of the normal distribution ? Why is it useful ?
 ### 8. What are the different approches to outlier detection ?  How will you handle the outliers? Why is it useful ?
 ### 9. Where is RMSE a bad case ? How do we solve this ?
