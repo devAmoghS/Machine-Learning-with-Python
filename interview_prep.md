@@ -88,9 +88,43 @@ This means that if you have measured (n-1) objects then the nth object has no fr
 
 ### 7. What are the assumptions of the normal distribution ? Why is it useful ?
 ### 8. What are the different approches to outlier detection ?  How will you handle the outliers? Why is it useful ?
-### 9. Where is RMSE a bad case ? How do we solve this ?
+### 9. How you assess OLS regression models ?
+Three statistics are used in Ordinary Least Squares (OLS) regression to evaluate model fit: 
+* R-squared, 
+* the overall F-test, and 
+* the Root Mean Square Error (RMSE). 
+
+All three are based on two sums of squares: Sum of Squares Total (SST) and Sum of Squares Error (SSE). SST measures how far the data are from the mean, and SSE measures how far the data are from the model’s predicted values. Different combinations of these two values provide different information about how the regression model compares to the mean model.
+
+##### R-squared and Adjusted R-squared
+
+The difference between SST and SSE is the improvement in prediction from the regression model, compared to the mean model. Dividing that difference by SST gives R-squared. It is the proportional improvement in prediction from the regression model, compared to the mean model. **It indicates the goodness of fit of the model.**
+
+R-squared has the useful property that its scale is intuitive: it ranges from zero to one, with zero indicating that the proposed model does not improve prediction over the mean model, and one indicating perfect prediction. Improvement in the regression model results in proportional increases in R-squared.
+
+One pitfall of R-squared is that it can only increase as predictors are added to the regression model. This increase is artificial when predictors are not actually improving the model’s fit. To remedy this, a related statistic, Adjusted R-squared, incorporates the model’s degrees of freedom. **Adjusted R-squared will decrease as predictors are added if the increase in model fit does not make up for the loss of degrees of freedom. Likewise, it will increase as predictors are added if the increase in model fit is worthwhile.** Adjusted R-squared should always be used with models with more than one predictor variable. It is interpreted as the proportion of total variance that is explained by the model.
+
+There are situations in which a high R-squared is not necessary or relevant. When the interest is in the relationship between variables, not in prediction, the R-square is less important. An example is a study on how religiosity affects health outcomes. A good result is a reliable relationship between religiosity and health. No one would expect that religion explains a high percentage of the variation in health, as health is affected by many other factors. Even if the model accounts for other variables known to affect health, such as income and age, an R-squared in the range of 0.10 to 0.15 is reasonable.
+
+![](https://miro.medium.com/max/1954/1*iFgJVgavYdENdtkssTS6pA.png)
+
+##### The F-test
+
+The F-test evaluates the null hypothesis that all regression coefficients are equal to zero versus the alternative that at least one is not. An equivalent null hypothesis is that R-squared equals zero. A significant F-test indicates that the observed R-squared is reliable and is not a spurious result of oddities in the data set. **Thus the F-test determines whether the proposed relationship between the response variable and the set of predictors is statistically reliable and can be useful when the research objective is either prediction or explanation.**
+
+##### RMSE
+
+The RMSE is the square root of the variance of the residuals. It indicates the absolute fit of the model to the data–how close the observed data points are to the model’s predicted values. **Whereas R-squared is a relative measure of fit, RMSE is an absolute measure of fit.** As the square root of a variance, RMSE can be interpreted as the standard deviation of the unexplained variance, and has the useful property of being in the same units as the response variable. **Lower values of RMSE indicate better fit. RMSE is a good measure of how accurately the model predicts the response, and it is the most important criterion for fit if the main purpose of the model is prediction.**
+
+##### NOTE: The best measure of model fit depends on the researcher’s objectives, and more than one are often useful. The statistics discussed above are applicable to regression models that use OLS estimation. Many types of regression models, however, such as mixed models, generalized linear models, and event history models, use maximum likelihood estimation. 
+
 ### 10. What are the loss functions used in logistic regression ?
-log loss function
+
+![](https://miro.medium.com/max/548/1*rdBw0E-My8Gu3f_BOB6GMA.png)
+
+where y is the label (1 for event and 0 for non-event) and p(y) is the predicted probability of the event happening for all N observations.
+Reading this formula, it tells you that, for each time the event occcurs (y=1), it adds log(p(y)) to the loss, that is, the log probability of event happening. Conversely, it adds log(1-p(y)), that is, the log probability of event not happening, for each non-event (y=0)
+
 ### 11. Explain random forest in laymen terms ?
 ### 12. How does logisitc regression work in laymen terms ?
 ### 13. Why is logistic regression bad idea for multiclass classification ?
