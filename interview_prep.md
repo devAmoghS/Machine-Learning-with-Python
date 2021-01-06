@@ -142,7 +142,6 @@ You make different combinations of criteria while asking to different connection
 ##### This is how a random forest also works
 ![](https://miro.medium.com/max/690/0*Ry4NWdoTXjSjMfrE)
 
-you reach out to 50 of your different connections and ask them based on different param
 ### 12. How does logisitc regression work in laymen terms ?
 ### 13. Why is logistic regression bad idea for multiclass classification ?
 ### 14. How do you perform the train test split in a timeseries modelling ?
