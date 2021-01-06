@@ -140,7 +140,7 @@ You reach out to 10 of your connections on LinkedIn and ask them which is the be
 You make different combinations of criteria while asking to different connections. At the end, you finally select company which is recommended the most from all the responses.
 
 ##### This is how a random forest also works
-![](https://miro.medium.com/max/690/0*Ry4NWdoTXjSjMfrE)
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/rfc_vs_dt1.png)
 
 ### 12. How does logisitc regression work in laymen terms ?
 ### 13. Why is logistic regression bad idea for multiclass classification ?
