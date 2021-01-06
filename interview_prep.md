@@ -126,6 +126,23 @@ where y is the label (1 for event and 0 for non-event) and p(y) is the predicted
 Reading this formula, it tells you that, for each time the event occcurs (y=1), it adds log(p(y)) to the loss, that is, the log probability of event happening. Conversely, it adds log(1-p(y)), that is, the log probability of event not happening, for each non-event (y=0)
 
 ### 11. Explain random forest in laymen terms ?
+
+Say you have three job offers and you wish to decide which is the best among them, you have the following criterion you use to shortlist a job offer like
+* tools and technology
+* company brand
+* health insurance
+* support for education
+* compensation
+* travel time
+* joining bonus etc.
+
+You reach out to 10 of your connections on LinkedIn and ask them which is the best comapny to join based on 3 random criteria (for eg. c2, c3, c5)
+You make different combinations of criteria while asking to different connections. At the end, you finally select company which is recommended the most from all the responses.
+
+##### This is how a random forest also works
+![](https://miro.medium.com/max/690/0*Ry4NWdoTXjSjMfrE)
+
+you reach out to 50 of your different connections and ask them based on different param
 ### 12. How does logisitc regression work in laymen terms ?
 ### 13. Why is logistic regression bad idea for multiclass classification ?
 ### 14. How do you perform the train test split in a timeseries modelling ?
