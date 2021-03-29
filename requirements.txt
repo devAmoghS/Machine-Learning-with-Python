@@ -1,7 +1,7 @@
 Keras==2.2.4
 Keras-Preprocessing==1.0.5
 PySocks==1.6.8
-Pygments==2.3.1
+Pygments==2.7.4
 Quandl==3.4.5
 asn1crypto==0.24.0
 backcall==0.1.0
