@@ -86,7 +86,19 @@ This means that you automatically know the thickness of 6th book even though you
 
 This means that if you have measured (n-1) objects then the nth object has no freedom to vary. Therefore, degree of freedom is only (n-1) and not n.
 
-### 7. What are the assumptions of the normal distribution ? Why is it useful ?
+### 7. What are the assumptions of the linear regression model ? Why is it useful ?
+We can divide the basic assumptions of linear regression into two categories based on whether the assumptions are about the explanatory variables (i.e. features) or the residuals.
+
+#### Assumptions about the explanatory variables (features):
+* Linearity
+* No multicollinearity
+
+#### Assumptions about the error terms (residuals):
+* Gaussian distribution
+* Homoskedasticity
+* No autocorrelation
+* Zero conditional mean
+
 ### 8. What are the different approches to outlier detection ?  How will you handle the outliers? Why is it useful ?
 ### 9. How you assess OLS regression models ?
 Three statistics are used in Ordinary Least Squares (OLS) regression to evaluate model fit: 
