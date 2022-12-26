@@ -41,4 +41,4 @@ statsmodels==0.9.0
 tornado==5.1.1
 traitlets==4.3.2
 wcwidth==0.1.7
-wheel==0.31.1
+wheel==0.38.1
