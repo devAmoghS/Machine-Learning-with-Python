@@ -6,7 +6,7 @@ Quandl==3.4.5
 asn1crypto==0.24.0
 backcall==0.1.0
 beautifulsoup4==4.6.3
-certifi==2018.8.24
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 cryptography==3.3.2
