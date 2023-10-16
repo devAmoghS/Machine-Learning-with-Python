@@ -35,3 +35,4 @@ if __name__ == '__main__':
     base_cluster = bottom_up_cluster(inputs, max)
     for cluster in generate_clusters(base_cluster, 3):
         print(get_values(cluster))
+
