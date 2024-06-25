@@ -12,7 +12,7 @@ chardet==3.0.4
 cryptography==42.0.4
 cycler==0.10.0
 h5py==2.9.0
-idna==2.7
+idna==3.7
 inflection==0.3.1
 ipython==8.10.0
 jedi==0.13.2
