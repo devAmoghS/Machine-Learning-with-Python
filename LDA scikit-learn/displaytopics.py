@@ -13,3 +13,5 @@ def display_topics(model, feature_names, num_top_words):
 num_top_words = 10
 display_topics(nmf, tfidf_feature_names, num_top_words)
 display_topics(lda, tf_feature_names, num_top_words)
+
+this is 
