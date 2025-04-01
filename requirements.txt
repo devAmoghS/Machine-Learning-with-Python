@@ -1,4 +1,4 @@
-Keras==2.2.4
+Keras==2.13.1
 Keras-Preprocessing==1.0.5
 PySocks==1.6.8
 Pygments==2.15.0
