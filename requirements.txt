@@ -35,7 +35,7 @@ requests>=2.20.0
 scikit-learn==1.5.0
 scipy==1.10.0
 seaborn==0.9.0
-setuptools==65.5.1
+setuptools==70.0.0
 six==1.11.0
 statsmodels==0.9.0
 tornado==6.4.1
