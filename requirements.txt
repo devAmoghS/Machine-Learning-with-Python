@@ -26,7 +26,7 @@ pexpect==4.6.0
 pickleshare==0.7.5
 pip==23.3
 ptyprocess==0.6.0
-pyOpenSSL==18.0.0
+pyOpenSSL==26.0.0
 pycparser==2.19
 pyparsing==2.2.1
 python-dateutil==2.7.3
