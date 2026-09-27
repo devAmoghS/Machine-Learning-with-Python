@@ -1,4 +1,4 @@
-# Machine-Learning-with-Python ![GitHub stars](https://img.shields.io/github/stars/devAmoghS/Machine-Learning-with-Python?style=for-the-badge)  ![GitHub forks](https://img.shields.io/github/forks/devAmoghS/Machine-Learning-with-Python?label=Forks&style=for-the-badge)
+.# Machine-Learning-with-Python ![GitHub stars](https://img.shields.io/github/stars/devAmoghS/Machine-Learning-with-Python?style=for-the-badge)  ![GitHub forks](https://img.shields.io/github/forks/devAmoghS/Machine-Learning-with-Python?label=Forks&style=for-the-badge)
 
 ## Star History
 
@@ -165,3 +165,13 @@ Please refer to each project's style guidelines and guidelines for submitting pa
  5. Submit a **Pull request** so that we can review your changes
 
 NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+
+
+## Spam Message Classification
+
+The `natural_language_processing/spam_classifier.py` example classifies short messages as `spam` or `ham` using TF-IDF features and a linear Support Vector Machine.
+
+Run the example from the repository root:
+
+```bash
+python3 natural_language_processing/spam_classifier.py
